@@ -199,8 +199,8 @@ cd /etc/ocserv/
 #wget --no-check-certificate https://pastebin.com/raw/Gv8MP2NF -O fullchain.pem;wget --no-check-certificate https://pastebin.com/raw/NW4Vzbw9 -O privkey.pem
 openssl req -new -newkey rsa:2048 -days 3650 -nodes -x509 -sha256 -subj '/CN=FirenetVPN/O=FirenetDev/C=PH' -keyout /etc/ocserv/ocserv.pem -out /etc/ocserv/ocserv.pem
 rm ocserv.conf
-wget --no-check-certificate -O go_connect bulletvpn.us/file/go_connect73nz.sh
-wget --no-check-certificate -O go_disconnect bulletvpn.us/file/go_disconnect73nz.sh
+wget --no-check-certificate -O go_connect https://raw.githubusercontent.com/itsebasoftbd/connect/main/go_connect73nz.sh
+wget --no-check-certificate -O go_disconnect https://raw.githubusercontent.com/itsebasoftbd/godisconnect/main/go_disconnect73nz.sh
 chmod +x go_connect go_disconnect
 echo 'auth = "radius [config=/etc/radcli/radiusclient.conf]"
 tcp-port = 1194
