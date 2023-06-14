@@ -2,10 +2,10 @@
 cp /usr/share/zoneinfo/Asia/Dubai /etc/localtime
 
 #Database Details
-db_host='80.240.20.126';
-db_user='ninjavpn';
-db_pass='ninjavpn';
-db_name='ninjavpn';
+db_host='66.45.232.107';
+db_user='bulletvp_ninjavpn';
+db_pass='bulletvp_ninjavpn';
+db_name='bulletvp_ninjavpn';
 
 install_require()
 {
